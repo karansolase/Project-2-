@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar
+{
+    display: flex;
+align-items: center;
+position: relative;
+background-color: rgba(0, 0, 0, -10.6);
+backdrop-filter: blur(6px);
+}
+#logo
+{
+margin: 0px 0px;
+}
+#logo img
+{
+    height: 93px;
+    margin: -4px -5px;
+}
+.main
+{
+    margin-left: 5px;
+    display: flex;
+}
+#navbar ul li{
+/* color: white; */
+list-style: none;
+}
+#navbar ul li a{
+    font-size: 26px;
+    color: white;
+    padding: 0px 30px;
+    border-radius:20px;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: -1.5;
+    }
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+    }
+#home
+{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+    margin-top: -60px;
+    margin-right: 0px;
+    content: "";
+    background: url(/Project2/main.jpg) center center / 100% 132% no-repeat;
+    position: absolute;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+.h-primary
+{
+    font-size: 75px;
+    padding: 12px;
+}
+#home  p{
+    color: white;
+    text-align: center;
+}
